@@ -1,0 +1,133 @@
+<div class="container form-container">
+    <div class="top-header">
+        <div class="row-fluid">
+            <div class="span4">
+                <div class="logo pull-left">
+                    <img src="images/feedhenry_logo1.png" alt="FeedHenry Logo" />
+                    <!-- <div class="logo-title">FeedHenry</div> -->
+                </div>
+            </div>
+            <div class="span4">
+                <div class="app-title">
+                    Team To-Dos
+                </div>
+            </div>
+            <div class="span4">
+                <div class="button-right right-aside">
+                    <button id="logout" name="logout" class="btn btn-primary btn-lg">Logout</button>
+                </div>
+            </div>
+            <div class="span12">						
+                <div class="top-box lead">
+                    <p class="lead">Completed To-Do Details</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="row-fluid clearfix">
+            <form id="edittodoform" name="edittodoform" role="form" style="text-align:left; margin: 0 auto;">
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="title" class="pull-left">Title</label>
+                        <input type="text" name="title" id="title" class="input-field form-control pull-right" required="required" readonly="true"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="description" class="pull-left">Description</label>
+                        <textarea name="description" id="description" class="input-field form-control pull-right" required="required" readonly="true"/>
+
+                        </textarea>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="deadline" class="pull-left">Deadline</label>
+                        <input type="text" name="deadline" id="deadline"  placeholder="YYYY-MM-DD" data-date data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" readonly="true" class="input-field form-control datepicker pull-right" required="required" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="requiredLocation" class="pull-left">Required Location</label>
+                        <input type="text" name="requiredLocation" id="requiredLocation"  placeholder="Click to map" class="input-field form-control pull-right"required="required" readonly="true"/>
+                        <input type="hidden" id="locationAbsVal" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="whoCompleted" class="pull-left">Who Completed</label>
+                        <input type="text" name="whoCompleted" id="whoCompleted" class="input-field form-control pull-right"required="required" readonly="true"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="whenCompleted" class="pull-left">When Completed</label>
+                        <input type="text" name="whenCompleted" id="whenCompleted" class="input-field form-control pull-right"required="required" readonly="true"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="whereCompleted" class="pull-left">Where Completed</label>
+                        <input type="text" name="whereCompleted" placeholder="Click to map" id="whereCompleted"  class="input-field form-control pull-right" required="required" readonly="true"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="note" class="pull-left">Note</label>
+                        <input type="text" name="note" id="note" class="input-field form-control pull-right"required="required" readonly="true"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="photo" class="pull-left">Photo</label>
+                        <div id="photoContainer" class="photo-container pull-right">
+                            <div id="photoThumbnail" class="photo-thumbnail">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="button-container double-button clearfix">
+            <div class="row-fluid">
+                <div class="left-button pull-left">
+                    <div class="alignright">
+                        <button name="backbutton" id="backbutton" class="btn btn-primary btn-lg">Back</button>
+                    </div>
+                </div>
+                <div class="right-button pull-right">
+                    <div class="alignleft">	
+                        <button name="delete" id="delete" class="btn btn-danger btn-primary btn-lg">Delete</button>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="error-container" id="error">
+
+    </div>
+
+</div>

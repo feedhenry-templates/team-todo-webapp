@@ -1,0 +1,99 @@
+<div class="container form-container">
+    <div class="top-header">
+        <div class="row-fluid">
+            <div class="span4">
+                <div class="logo pull-left">
+                    <img src="images/feedhenry_logo1.png" alt="FeedHenry Logo" />
+                    <!-- <div class="logo-title">FeedHenry</div> -->
+                </div>
+            </div>
+            <div class="span4">
+                <div class="app-title">
+                    Team To-Dos
+                </div>
+            </div>
+            <div class="span4">
+                <div class="button-right right-aside">
+                    <button id="logout" name="logout" class="btn btn-primary btn-lg">Logout</button>
+                </div>
+            </div>
+            <div class="span12">						
+                <div class="top-box lead">
+                    <p class="lead">New To-Do </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="row-fluid clearfix">
+            <form id="edittodoform" name="edittodoform" role="form" style="text-align:left; margin: 0 auto;">
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="title" class="pull-left">Title</label>
+                        <input type="text" name="title" id="title" class="input-field form-control pull-right" required="required" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="description" class="pull-left">Description</label>
+                        <textarea name="description" id="description" class="input-field form-control pull-right" required="required" />
+
+                        </textarea>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="deadline" class="pull-left">Deadline</label>
+                        <input type="text" name="deadline" id="deadline"  placeholder="YYYY-MM-DD" data-date data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" readonly="true" class="input-field form-control datepicker pull-right" required="required" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="location" class="pull-left">Location</label>
+                        <input type="text" name="location" id="location"  placeholder="Click to Set on Map" class="input-field form-control pull-right"required="required" readonly="true"/>
+                        <input type="hidden" id="locationAbsVal" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="form-group">
+                        <label for="user" class="pull-left">User</label>
+                        <select name="user" id="user" class="input-field form-control pull-right">
+                            <option value="">Select from List</option>
+                        </select>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="button-container double-button clearfix">
+            <div class="row-fluid">
+                <div class="left-button pull-left">
+                    <div class="alignright">
+                        <button name="backbutton" id="backbutton" class="btn btn-primary btn-lg">Back</button>
+                    </div>
+                </div>
+                <div class="right-button pull-right">
+                    <div class="alignleft">	
+                        <button name="complete" id="complete" class="btn btn-success btn-primary btn-lg">Submit</button>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="error-container" id="error">
+
+    </div>
+
+</div>

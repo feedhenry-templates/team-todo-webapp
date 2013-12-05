@@ -1,0 +1,11 @@
+var globalVar = "Hello World I am here ";
+var sessionKey = "nguisessionId";
+var todoDetailsResponse = "";
+var HashedTodoList = [];
+var HashedUserList = {};
+var HashedCompletedTodoList = [];
+var userListKey = "UserListArray";
+var todoDetails = "todoDetailsArr";
+var MapLatLangDataObj = "mapLatLangObj";
+var currentViewUrl = "currentViewUrl";
+var selectedToDo;
