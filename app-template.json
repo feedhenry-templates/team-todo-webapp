@@ -3,5 +3,5 @@
   "name": "Team To-Do Backbone Project-portal",
   "type": "webapp_basic",
   "repoUrl": "git://github.com/feedhenry-sample-apps/team-to-do-backbone-project-portal.git",
-  "repoBranch": "refs/heads/6066-connection-bugfixing"
+  "repoBranch": "refs/heads/master"
 }
